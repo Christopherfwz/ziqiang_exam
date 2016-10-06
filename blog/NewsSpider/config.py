@@ -10,7 +10,7 @@ from celery.schedules import crontab
 CELERYBEAT_SCHEDULE = {
     'spider': {
         'task': 'main.spider',
-        'schedule': timedelta(seconds=10),
+        'schedule': timedelta(minutes=30),
         'args':(),
     },
 }
